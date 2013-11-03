@@ -1,0 +1,114 @@
+body{
+	font-family: Arial;
+	/*;
+	white: rgb(251,251,252);
+	lighter orange: rgb(216, 86, 64);
+	darker orange: #D14334;
+	lighter green: rgb(51,190,165);
+	darker green: rgb (51, 115, 102);
+	lightest grey: rgb(107,119,126);
+	grey (text): rgb(46,59,69);
+	dark grey: rgb(31,40,44);
+	darker grey: rgb(23,32,34);
+	
+	*/
+	background-color: rgba(179,224,153, 0.2);
+	font-size: 14px;
+}
+
+h1{
+	margin-top: 50px;
+	margin-bottom: 0px;
+	color: rgb(38, 45, 69);
+}
+
+#container {
+	width: 850px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+table, td, th, tr {
+	/*border: none;*/
+	margin: 0px;
+	padding: 5px;
+	text-align: center;
+}
+
+thead tbody {
+	border: 1px solid gray;
+} 
+
+table thead tr:first-child {
+	background-color: rgba(54,65,99,1);
+	color: white;
+	height: 30px;
+}
+
+table thead tr:nth-child(2) {
+	background-color: rgba(54,65,99,.75);
+	color: white;
+	height: 30px;
+}
+
+table tbody tr:nth-child(even) {
+ 	background-color: rgba(255,234,173,.35);
+}
+
+table tbody tr:nth-child(odd) {
+ 	background-color: rgba(179,224,153,.35);
+}
+
+table tbody tr:nth-child(1) {
+ 	background-color: rgba(54,65,99,1);
+ 	color: white
+}
+/*table tr td:first-child{
+	background-color: #EBE54D;
+}*/
+
+td {
+	width: 10px;
+	height: 25px;
+}
+
+#scoreBoard td {
+	width: 35px;
+	height: 25px;
+}
+
+table{
+	display: none;
+	margin: 20px auto;
+	border-collapse: collapse;
+}
+
+
+
+input {
+	width: 50px;
+	text-align: center;
+	font-size: 12px;
+}
+
+.golfButtons{
+	display: none;
+}
+
+button{
+	float: center;
+	border: none;
+	width: 130px;
+	height: 50px;
+	border-radius: 15px;
+	background-color: #D14334;
+/*	background-color: #FE4365;*/
+	color: white;
+	box-shadow: 0;
+	font-size: 13px;
+	text-transform: uppercase;
+	margin: 25px 10px;
+}
+/*.hideAll{
+	display: none;
+}*/

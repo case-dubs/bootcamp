@@ -1,0 +1,13 @@
+.whiteHeader{
+	width: 100%;
+	color: #50bfa4;
+	background-color: white;
+	display: none;
+}
+
+#social{
+	display: none;
+	width: 500px;
+	margin: 0 auto;
+	padding: 150px 0px;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FB Integrated!</title>
+	<link rel="stylesheet" type="text/css" href="fbIntegrationTest.css">
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="fbInitialization.js"></script>
+	<script type="text/javascript" src="fbIntegrationTest.js"></script>
+</head>
+<body>
+	<div id="fb-root"></div>
+
+	<!--
+	  Below we include the Login Button social plugin. This button uses the JavaScript SDK to
+	  present a graphical Login button that triggers the FB.login() function when clicked.
+
+	  Learn more about options for the login button plugin:
+	  /docs/reference/plugins/login/ -->
+	<header class="whiteHeader">
+		<div id="myPhoto"></div>
+		<h4 id="myName"></h4>
+		<button id="logout" onclick="FB.Logout();"></button>
+
+	</header>
+	<div id="signUp">
+		<h2>Sign Up Using Facebook</h2>
+		<fb:login-button show-faces="true" attr="autologoutlink" width="200" max-rows="1" id="fbLogin"></fb:login-button>
+	</div>
+	<div id="social">
+		<h3>Invite Friends</h3>
+		<button id="fbInviteButton">Invite Friends</button>
+		<div id="myFriendsContainer">
+			<ul id="myFriendsList">
+				<li></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
