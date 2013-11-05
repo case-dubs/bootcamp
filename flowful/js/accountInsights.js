@@ -1,13 +1,8 @@
 //When the document is ready, create the empty table
 $(document).ready(function() {
 
-	//The empty object that will hold all of the data for each person
-	var tmpPerson = {
-			name: '',//The name
-			data: {},//Their misc data (NOT entries, and not being populated)
-			entries: []//The entries
-	};
-	
+	//testing123
+
 	//When somebody clicks the submit button, get the URLs and load-parse-save
 	$(document).ready(function() {
 		//The url to GET the xml from
@@ -18,15 +13,19 @@ $(document).ready(function() {
 		//Log that the button was clicked
 		console.log("Clicked!");
 		
+		//URL for saved XML document
+		var anielaXML = '/flowful/js/caseyconverter/aniela.xml';
+		var aniela = '';
+
 		//This ajax call gets the .xml
 		$.ajax({
-			url: 'caseyconverter/flowfulPilotV1.xml',//The url plus '.xml'
+			url: anielaXML ,//The url plus '.xml'
 			dataType: 'xml',//It's an xml...
 			success: function(myData){
 				//Log the data that we just pulled from the xml
 				console.log(myData);
 				//Try to save the data === = NOT WORKING = ===
-				$.post(urlPost + ".json", parseXML(myData));
+				parseXML(myData);
 			},
 			error: function(xhr, text, errorScript){
 				//If there was an error, print that out
@@ -42,8 +41,12 @@ $(document).ready(function() {
 		//Get the table element from the xml
 		var table = $($(data).find("Table")[0]);
 		//Create a variable to push the data into
+		var tmpPerson = {
+		name: '',//The name
+		data: {},//Their misc data (NOT entries, and not being populated)
+		entries: []//The entries
+		};
 
-		
 		
 		//console.log(table);
 		
@@ -132,8 +135,10 @@ $(document).ready(function() {
 		
 		//Log the object we now have
 		console.log(tmpPerson);
+		console.log(tmpPerson.entries[0].activityNarrow);
 		//Give it back to the calling function
-		return tmpPerson;
+		/*return tmpPerson;*/
+
 	}
 	
 });

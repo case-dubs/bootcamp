@@ -8,6 +8,8 @@ $(document).ready(function() {
 			entries: []//The entries
 	};
 	
+	//testing123
+
 	//When somebody clicks the submit button, get the URLs and load-parse-save
 	$(document).ready(function() {
 		//The url to GET the xml from
@@ -18,9 +20,12 @@ $(document).ready(function() {
 		//Log that the button was clicked
 		console.log("Clicked!");
 		
+		//URL for saved XML document
+		var xmlDoc = 'https://github.com/case-dubs/bootcamp/blob/master/flowful/js/caseyconverter/flowfulPilotV1.xml';
+
 		//This ajax call gets the .xml
 		$.ajax({
-			url: 'js/caseyconverter/flowfulPilotV1.xml',//The url plus '.xml'
+			url: xmlDoc ,//The url plus '.xml'
 			dataType: 'xml',//It's an xml...
 			success: function(myData){
 				//Log the data that we just pulled from the xml
