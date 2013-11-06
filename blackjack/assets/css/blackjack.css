@@ -2,6 +2,8 @@ body{
 	background-color: #003054;
 	color: white;
 	font-family: arial;
+	margin: 0 auto;
+	text-align: center;
 }
 
 #wrapper{
@@ -72,4 +74,16 @@ body{
 
 #stand{
 	display: none;
+}
+
+.card{
+	display: inline-block;
+	width: 72px;
+	height: 100px;
+	border: 1px solid white;
+	margin:  25px 5px 0px 0px;
+}
+
+.backCard {
+	width: 74px;
 }

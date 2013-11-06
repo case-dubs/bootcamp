@@ -137,3 +137,105 @@ $(document).ready(function() {
 	}
 	
 });
+
+/*Functions for the top graph - parameters for these equations are likely (start date, end date) depending on how the time duration is set - if not using an api call*/
+
+//To be used when page loads and when user modifies the start and end date measured. Determines the start and end date for the data being measured. This will be reused in both the first two sections of the page
+function dateRangeCalculator(){
+
+	//start date
+
+	//end date
+
+	//Api call request that reloads page/section based off of time span requested OR trimming original data object/array based off of new specified date range 
+
+
+}
+
+//Calculates and display on page basic aliveness stats for the time range selected
+function alivenessStats(){
+
+	//Avg. aliveness
+
+	
+
+	//Highest aliveness reported
+
+	//Lowest aliveness
+
+}
+
+//Calculates and display on page basic people stats for the time range selected
+function peopleStats(){
+
+	//Categories: alone, core, acquaintances, strangers, colleagues [for starters, let's group singular and plural instances - eg: colleague and colleagues to see what that data looks like]
+
+	//Most frequently w/: 
+
+	//Greatest happiness on avg. for time range with, if available, must be 3 times to ensure that it isn't an outlier, when user is with...
+
+	//Lowest aliveness w/
+
+}
+
+//Calculates and display on page basic activity stats for the time range selected
+function activityStats(){
+
+	//Broad categories: work, leisure, hobbies, maintenance
+
+	//Most frequently doing:
+
+	//Greatest happiness on avg. for time range with, if available, must be 3 times to ensure that it isn't an outlier, when engaged in X activity:
+
+	//Lowest aliveness when engaged in what category of activity
+
+}
+
+//Calculates, compares and displays on page basic stats for two users for the time range selected
+function friendComparer(){
+
+
+
+}
+
+/*Functions for the second, "You and your environement", section of the page*/
+
+//In this section, I need to build concentric circles with id's for each activty/people type and then change the background color based off of it's relative ranking for that time range
+	//Need to create a way to detect which area of the cirlce is being moused over - to then trigger the Breakdown() events
+
+//Calculates and ranks user's aliveness level by people type for the specified date duration
+function youAndPeopleRanker(){
+
+	//Calculate average aliveness level per people type for the specified time range
+
+	//Rank from highest to lowest and asign a color for each ranking
+
+}
+
+//Calculates stats related to user's aliveness by activity depending on whether they are alone, 1-1 or in a group 
+function youAndPeopleBreakdown(){
+
+	//Call youAndActivityRanker() for stats on avg. aliveness by activity
+
+
+}
+
+//Calculates and ranks user's aliveness level by activity type for the specified date duration
+function youAndActivityRanker(){
+
+	//Calculate average aliveness level per activty type for the specified time range
+
+	//Rank from highest to lowest and asign a color for each ranking
+
+}
+
+//For each activity type, reports which 3 activities (if enough data - 6 data points - is available) have the highest and lowest aliveness instance and reports the aliveness level of that instance. An alternative would be to calculate the average aliveness level for the activty subcategory, rather than by single instance
+function youAndActivityBreakdown(){
+
+	//loop that runs through each activty type
+		//loop that runs through each instance within that activty type and ranks the instances from highest to lowest - in an array
+
+		//then chooses the 3 highest and lowest instances and prints the sub-activity and the aliveness level for that instance 
+
+}
+

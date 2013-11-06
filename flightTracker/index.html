@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>B&C FlightTracker</title>
+	<link rel="stylesheet" type="text/css" href="css/application.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/modernizr.js"></script>
+	<script type="text/javascript" src="js/flightTrackerApi.js"></script>
+</head>
+<body>
+	<header>
+		<h1>B&C FlightTracker</h1>
+	</header>
+	<div id="mainContainer">
+		<div id="selector">
+			<h2>Flight Tracker</h2>
+			<form>
+				<label for="showAirports">Show Airports Within</label><br>
+				<select id="showAirports" name="showAirports">
+					<option value="5">5 miles</option>
+					<option value="25">25 miles</option>
+					<option value="50">50 miles</option>
+					<option value="100">100 miles</option>
+					<option value="100+">100+ miles</option>
+				</select><br>
+				<label for="selectAirport">Select Airport</label><br>
+				<select id="selectAirport" name="selectAirport">
+					<option>My Nearest Airport</option>
+				</select><br>
+				<label for="arrivals">Arrivals</label><br>
+				<select id="arrivals" name="arrivals">
+					<option value="none">None</option>
+					<option value="oneHour">Within the last hour</option>
+					<option value="twoHours">Within the last 2 hours</option>
+				</select><br>
+				<label for="departures">Departures</label><br>
+				<select id="departures" name="departures"><br>
+					<option value="none">None</option>
+					<option value="oneHour">Within the last hour</option>
+					<option value="twoHours">Within the last 2 hours</option>
+				</select><br>
+				<button id="btn-display">Display Flights</button>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

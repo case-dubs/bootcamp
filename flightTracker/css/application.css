@@ -1,0 +1,68 @@
+*{
+	font-family: Helvetica;
+	font-weight: 300;
+	margin: 0 auto;
+}
+
+header{
+	padding: 15px 75px;
+	background-color: rgb(245,245,245);
+	width: 100%;
+}
+
+header h1{
+	color: rgb(221,102,68);
+}
+
+#mainContainer{
+	background: url('/flightTracker/images/googlemapPlaceholder.png') no-repeat;
+	background-size: cover;
+	height: 900px;
+	width: 100%;
+}
+
+#selector{
+	width: 30%;
+	background-color: rgb(245,245,245);
+	color: rgb(96,96,96);
+	border-radius: 10px;
+	margin-top: 100px;
+	float: left;
+	margin-left: 75px;
+}
+
+form{
+	padding: 25px;
+}
+
+#selector h2{
+	/*background-color: white;*/
+	width: 100%;
+	padding: 10px 0px;
+	text-align: center;
+}
+
+#selector label, #selector select, #selector button,  #selector h2{
+	margin: 10px 0px;
+}
+
+
+button{
+	background-color: rgb(221,102,68);
+	color: white;
+	text-align: center;
+	width: 200px;
+	height: 60px;
+	float: center;
+	font-size: 16px;
+	border-radius: 5px;
+	border: none;
+}
+
+select{
+	background-color: white;
+	border: 1px solid rgb(96,96,96);
+	border-radius: 5px;
+	width: 250px;
+	height: 25px;
+}
